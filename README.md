@@ -19,6 +19,7 @@
 - Layout responsivo criado com Tailwind CSS
 - Modo escuro com alternância na barra de navegação
 - Página "Sobre" com informações da empresa
+- Página "Renda Fixa" com indicadores do Banco Central
 
 ## About Laravel
 
