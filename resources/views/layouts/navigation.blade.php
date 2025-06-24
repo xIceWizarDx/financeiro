@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-gray-800 dark:via-gray-900 dark:to-black text-white">
+<nav x-data="{ open: false }" class="backdrop-blur bg-white/30 dark:bg-gray-900/30 border-b border-white/10 dark:border-gray-700 text-white">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -17,6 +17,9 @@
                     </x-nav-link>
                     <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
                         {{ __('Sobre') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('market')" :active="request()->routeIs('market')">
+                        {{ __('Mercado') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -81,6 +84,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')">
                 {{ __('Sobre') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('market')" :active="request()->routeIs('market')">
+                {{ __('Mercado') }}
             </x-responsive-nav-link>
         </div>
 
