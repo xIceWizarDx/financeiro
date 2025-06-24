@@ -14,6 +14,12 @@
 3. Generate an application key using `php artisan key:generate`.
 4. Start your preferred local server (such as XAMPP) and run `php artisan serve`.
 
+## Features
+
+- Layout responsivo criado com Tailwind CSS
+- Modo escuro com alternância na barra de navegação
+- Página "Sobre" com informações da empresa
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
