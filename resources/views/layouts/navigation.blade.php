@@ -21,6 +21,9 @@
                     <x-nav-link :href="route('market')" :active="request()->routeIs('market')">
                         {{ __('Mercado') }}
                     </x-nav-link>
+                    <x-nav-link :href="route('income')" :active="request()->routeIs('income')">
+                        {{ __('Renda Fixa') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -87,6 +90,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link :href="route('market')" :active="request()->routeIs('market')">
                 {{ __('Mercado') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('income')" :active="request()->routeIs('income')">
+                {{ __('Renda Fixa') }}
             </x-responsive-nav-link>
         </div>
 
