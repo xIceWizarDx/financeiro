@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white">
+<nav x-data="{ open: false }" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white sticky top-0 z-50 shadow-md">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -14,6 +14,12 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
+                    </x-nav-link>
+                    <x-nav-link href="#">
+                        {{ __('Transações') }}
+                    </x-nav-link>
+                    <x-nav-link href="#">
+                        {{ __('Relatórios') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -69,6 +75,12 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                 {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="#">
+                {{ __('Transações') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="#">
+                {{ __('Relatórios') }}
             </x-responsive-nav-link>
         </div>
 

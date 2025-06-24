@@ -26,6 +26,36 @@
                 <h3 class="text-lg font-semibold mb-4">Visão Geral Mensal</h3>
                 <canvas id="financeChart" height="100"></canvas>
             </div>
+
+            <div class="bg-white rounded-lg shadow p-6">
+                <h3 class="text-lg font-semibold mb-4">Últimas Transações</h3>
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Data</th>
+                            <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Descrição</th>
+                            <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">10/06/2025</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Pagamento de fornecedor</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-red-500">-R$ 1.200,00</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">12/06/2025</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Venda de produto</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-green-500">R$ 3.000,00</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap">14/06/2025</td>
+                            <td class="px-6 py-4 whitespace-nowrap">Salário</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-red-500">-R$ 800,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
